@@ -1,0 +1,15 @@
+<mat-card-content>
+<mat-toolbar  class="gradient-background adjust">
+    <span class="nav-links" >
+    <mat-icon>home</mat-icon>
+    <span  *ngFor="let name of authMenus;" value="{{name}}" >
+        <a  (click)="getNavData(name)" class="nav-link">{{ name }}</a>
+    </span>
+    </span>
+    <div class="adj" *ngIf="menus">
+      <mat-icon>logout</mat-icon>
+      <span class="nav-link" (click)="logout()">Log Out</span>
+    </div>
+  </mat-toolbar>
+</mat-card-content>
+  

@@ -1,0 +1,58 @@
+{
+  "user": [
+    {
+      "id": "admin1",
+      "name": "Hari",
+      "password": "helloworlD1@",
+      "email": "admin@12.com",
+      "gender": "Male",
+      "role": "developer",
+      "isActive": true
+    },
+    {
+      "id": "admin",
+      "name": "Vishwa",
+      "password": "Admin@123",
+      "email": "Admin@12.com",
+      "gender": "Male",
+      "role": "1",
+      "isActive": true
+    },
+    {
+      "id": "Q12",
+      "name": "Nandeesh",
+      "password": "Nandu@123",
+      "email": "Nandhu@123.com",
+      "gender": "Male",
+      "role": "hr",
+      "isActive": true
+    },
+    {
+      "id": "223",
+      "name": "washim",
+      "password": "Admin@123",
+      "email": "Wahuji@gmail.com",
+      "gender": "FEMale",
+      "role": "developer",
+      "isActive": true
+    }
+  ],
+  "role": [
+    {
+      "roleID": "admin",
+      "roleName": "Admin"
+    },
+    {
+      "roleID": "developer",
+      "roleName": "Developer"
+    },
+    {
+      "roleID": "hr",
+      "roleName": "Hr"
+    },
+    {
+      "roleID": "tester",
+      "roleName": "Tester"
+    }
+  ]
+}

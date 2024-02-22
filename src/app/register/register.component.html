@@ -1,0 +1,46 @@
+<div style="display:flex;align-items: center;justify-content: center;" >
+<mat-card class="form-card">
+    <mat-card-header>
+        <h2>Registration Form</h2>
+    </mat-card-header>
+    <mat-card-content style="display: flex;align-items: center;justify-content: center;" >
+        <form class="form-horizontal clearfix" [formGroup]="registerform" (ngSubmit)="proceedregistration()" novalidate>
+            <div class="form-row">
+            <mat-form-field class="example-full-width">
+                    <mat-label>USER ID</mat-label>
+                    <input matInput formControlName="id" >
+            </mat-form-field>
+            </div>
+            <div class="form-row">
+            <mat-form-field class="example-full-width">
+                    <mat-label>NAME</mat-label>
+                    <input matInput  type="text" formControlName="name" >
+            </mat-form-field>
+            </div>
+            <div class="form-row">
+            <mat-form-field class="example-full-width">
+                    <mat-label>PassWord</mat-label>
+                    <input matInput  type="password" formControlName="password" >
+            </mat-form-field>
+            </div>
+            <div class="form-row">
+            <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input matInput  type="email" formControlName="email">
+            </mat-form-field>
+            </div>
+            <div class="form-row">
+                <mat-radio-group formControlName="gender" aria-label="Gender" style=" display: flex;
+                gap: 10px; ">
+                        <mat-radio-button value="Male"> Male</mat-radio-button>
+                        <mat-radio-button value="FEMale" style="gap: 10px;">FeMale</mat-radio-button>
+                </mat-radio-group>
+            </div>
+            <mat-card-actions>
+                        <button mat-raised-button color="primary">Submit</button>
+                        <a mat-raised-button color="accent" (click)="login()">Back To Login</a>
+            </mat-card-actions>
+        </form>
+    </mat-card-content>
+</mat-card>
+</div>
